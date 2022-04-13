@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:classmaster"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="0,50,0,0">
+        <Frame Name="MainFrame"/>
+       
     </Grid>
 </Window>

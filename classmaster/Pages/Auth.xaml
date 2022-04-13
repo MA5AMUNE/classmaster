@@ -1,0 +1,48 @@
+﻿<Page x:Class="classmaster.Pages.Auth"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:classmaster.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Auth">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="5" Grid.Row="6" Content="Login" Width="150" Height="25" Background="#FFCA9390" Cursor="Arrow" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Label Grid.Column="5" Grid.Row="7" Content="Password" Width="150" Height="25" Background="#FF98CA90" Cursor="Arrow" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <TextBox Grid.Column="6" Grid.Row="6" TextWrapping="Wrap" Text="Введите Логин" Width="150" Height="25" Background="#FFFD9494"  HorizontalAlignment="Center" VerticalAlignment="Top" Cursor="Pen" GotFocus="TextBox_GotFocus" Margin="0,5,0,0"/>
+        <TextBox Grid.Column="6" Grid.Row="7" TextWrapping="Wrap" Text="Введите Пароль" Width="150" Height="25" Background="#FFBEFD94"  HorizontalAlignment="Center" VerticalAlignment="Top" Cursor="Pen" GotFocus="TextBox_GotFocus_1"/>
+        <Button Content="Регистрация" Margin="0,0,0,0" Grid.Row="8" Grid.Column="5"/>
+        <Button Content="Авторизация" Grid.Row="8" Grid.Column="6"/>
+
+    </Grid>
+</Page>

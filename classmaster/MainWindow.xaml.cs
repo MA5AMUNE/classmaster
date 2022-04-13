@@ -1,4 +1,5 @@
-﻿using System;
+﻿using classmaster.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace classmaster
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new Auth());
         }
     }
 }
