@@ -1,0 +1,57 @@
+﻿<Page x:Class="classmaster.Pages.MainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:classmaster.Pages"
+      mc:Ignorable="d"
+      Title="MainMenu" Width="1200" Height="599.6">
+
+    <Grid Width="1200" Height="600">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100px"></ColumnDefinition>
+            <ColumnDefinition Width="100px"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="1" Content="Здравствуйте!" Width="200" Height="25" Background="White" Cursor="Arrow" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.ColumnSpan="2" FontFamily="Sitka Banner" FontWeight="Bold"/>
+        <Label Grid.Column="0" Grid.Row="2" Content="&lt;User&gt;" Width="200" Height="25" Background="White" Cursor="Arrow" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.RowSpan="1" Grid.ColumnSpan="2" FontFamily="Segoe Script"/>
+        <Label Grid.Column="0" Grid.Row="13" Content="Пропуски" Width="100" Height="30" Background="#FFEFE8FF" Cursor="Arrow" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="0" Grid.Row="8" Content="Мероприятия" Width="100" Height="30" Background="#FFE8FFEB" Cursor="Arrow" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.RowSpan="1" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="0" Grid.Row="5" Width="100" Height="30" Background="#FFFFE8E8" Cursor="Arrow" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Content="Предметы"/>
+        <Label Grid.Column="0" Grid.Row="6" Content="Учителя" Width="100" Height="30" Background="#FFFFE8E8" Cursor="Arrow" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.RowSpan="1" Grid.ColumnSpan="2"/>
+        <Button Content="Просмотр" Margin="0,0,0,0" Grid.Row="5" Grid.Column="1" Width="100" Height="30" Click="Button_Click"/>
+        <Button Content="Просмотр" Grid.Row="6" Grid.Column="1" Width="100" Height="30"/>
+        <Button Content="Просмотр" Grid.Row="13" Grid.Column="1" Width="100" Height="30"/>
+        <Button Content="Просмотр" Grid.Row="8" Grid.Column="1" Width="100" Height="30"/>
+        <Button Content="Просмотр" Grid.Row="9" Grid.Column="1" Width="100" Height="30"/>
+        <Label Grid.Row="9" Content="Классные часы" Width="100" Height="30" Background="#FFEBFFE8" Cursor="Arrow" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+    </Grid>
+</Page>

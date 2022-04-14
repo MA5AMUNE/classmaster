@@ -42,10 +42,5 @@ namespace classmaster.Pages
 
             }
         }
-
-        private void AuthClick(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new MainMenu());
-        }
     }
 }
