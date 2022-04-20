@@ -25,14 +25,24 @@ namespace classmaster.Pages
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void AuthClick(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void AuthClick(object sender, RoutedEventArgs e)
+        private void HealthCardClick(object sender, RoutedEventArgs e)
         {
+            NavigationService.Navigate(new Page1());
+        }
 
+        private void ClassroomLessonsClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ClassroomLessons());
+        }
+
+        private void EventsButtonClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Events());
         }
     }
 }
