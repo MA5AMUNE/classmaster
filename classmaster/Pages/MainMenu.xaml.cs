@@ -23,6 +23,8 @@ namespace classmaster.Pages
         public MainMenu()
         {
             InitializeComponent();
+    
+            
         }
 
         private void AuthClick(object sender, RoutedEventArgs e)
@@ -44,5 +46,21 @@ namespace classmaster.Pages
         {
             NavigationService.Navigate(new Events());
         }
+
+        private void SkipsClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Skips());
+        }
+
+        private void TeachersClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Teachers());
+        }
+
+        private void SubjectsClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Subjects());
+        }
+
     }
 }

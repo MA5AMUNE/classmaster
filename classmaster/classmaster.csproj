@@ -87,7 +87,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Skips.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Subjects.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Teachers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -108,8 +116,14 @@
     <Compile Include="Pages\HealthCard.xaml.cs">
       <DependentUpon>HealthCard.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Skips.xaml.cs">
+      <DependentUpon>Skips.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Subjects.xaml.cs">
       <DependentUpon>Subjects.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Teachers.xaml.cs">
+      <DependentUpon>Teachers.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

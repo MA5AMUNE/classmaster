@@ -37,10 +37,10 @@
         <Label Content="Группа здоровья" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Width="150" Height="30" Background="#FFE2E2E2"/>
         <Label Content="Диагноз" HorizontalAlignment="Center" Grid.Row="7" VerticalAlignment="Center" Width="150" Height="30" Background="#FFE2E2E2"/>
         <Label Content="Рекомендации" HorizontalAlignment="Center" Grid.Row="8" VerticalAlignment="Center" Width="150" Height="30" Background="#FFE2E2E2"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Width="450" Grid.Column="1" Grid.Row="5" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFE1E1" Grid.ColumnSpan="1"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Width="450" Grid.Column="1" Grid.Row="6" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFE1E1" Grid.ColumnSpan="1"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Width="450" Grid.Column="1" Grid.Row="7" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFE1E1" Grid.ColumnSpan="1"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Width="450" Grid.Column="1" Grid.Row="8" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFE1E1" Grid.RowSpan="3" Grid.ColumnSpan="1"/>
+        <TextBox TextWrapping="Wrap" Width="450" Grid.Column="1" Grid.Row="5" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFE1E1" Grid.ColumnSpan="1"/>
+        <TextBox TextWrapping="Wrap" Width="450" Grid.Column="1" Grid.Row="6" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFE1E1" Grid.ColumnSpan="1"/>
+        <TextBox TextWrapping="Wrap" Width="450" Grid.Column="1" Grid.Row="7" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFE1E1" Grid.ColumnSpan="1"/>
+        <TextBox TextWrapping="Wrap" Width="450" Grid.Column="1" Grid.Row="8" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFE1E1" Grid.RowSpan="3" Grid.ColumnSpan="1"/>
         <Button Content="Сохранить" Grid.Row="5" Grid.Column="3"/>
 
 

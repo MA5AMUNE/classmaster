@@ -16,16 +16,16 @@ using System.Windows.Shapes;
 namespace classmaster.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Events.xaml
+    /// Логика взаимодействия для Teachers.xaml
     /// </summary>
-    public partial class Events : Page
+    public partial class Teachers : Page
     {
-        public Events()
+        public Teachers()
         {
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }

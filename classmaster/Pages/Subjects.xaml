@@ -36,8 +36,8 @@
         <Label Grid.Column="0" Content="Здравствуйте!" Width="200" Height="25" Background="White" Cursor="Arrow" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Sitka Banner" FontWeight="Bold" Grid.Row="1"/>
         <Label Content="Код предмета" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Width="150" Height="30" Background="#FFE2E2E2"/>
         <Label Content="Наименование предмета" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Width="150" Height="30" Background="#FFE2E2E2"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Width="450" Grid.Column="1" Grid.Row="5" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFE1E1" Grid.ColumnSpan="1"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Width="450" Grid.Column="1" Grid.Row="6" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFE1E1" Grid.ColumnSpan="1"/>
+        <TextBox TextWrapping="Wrap" Width="450" Grid.Column="1" Grid.Row="5" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFE1E1" Grid.ColumnSpan="1"/>
+        <TextBox TextWrapping="Wrap" Width="450" Grid.Column="1" Grid.Row="6" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFE1E1" Grid.ColumnSpan="1"/>
         <Button Content="Сохранить предмет" Grid.Row="5" Grid.Column="3"/>
         <Button Content="Добавить предмет" Grid.Row="4" Grid.Column="3"/>
         <Button Content="Удалить предмет" Grid.Row="6" Grid.Column="3"/>
