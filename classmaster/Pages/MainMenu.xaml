@@ -53,7 +53,7 @@
         <Label Grid.Row="9" Content="Классные часы" Width="150" Height="30" Background="#FFEBFFE8" Cursor="Arrow" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button Content="Просмотр" Grid.Row="11" Grid.Column="1" Width="150" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Grid.Row="11" Content="Питание" Width="150" Height="30" Background="#FFFFFFE8" Cursor="Arrow" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Content="Просмотр" Grid.Row="6" Grid.Column="4" Width="150" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="Просмотр" Grid.Row="6" Grid.Column="4" Width="150" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ParentsClick"/>
         <Button Content="Просмотр" Grid.Row="13" Grid.Column="4" Width="150" Height="30" Click="HealthCardClick" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button Content="Просмотр" Grid.Row="8" Grid.Column="4" Width="150" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Grid.Row="13" Content="Карта здоровья" Width="150" Height="30" Background="#FFE8FFFE" Cursor="Arrow" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3"/>

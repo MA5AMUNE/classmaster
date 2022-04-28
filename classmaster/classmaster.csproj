@@ -71,6 +71,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Catering.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\ClassroomLessons.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -87,7 +91,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Parents.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Skips.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Students.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -104,6 +116,9 @@
     <Compile Include="Pages\Auth.xaml.cs">
       <DependentUpon>Auth.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Catering.xaml.cs">
+      <DependentUpon>Catering.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ClassroomLessons.xaml.cs">
       <DependentUpon>ClassroomLessons.xaml</DependentUpon>
     </Compile>
@@ -116,8 +131,14 @@
     <Compile Include="Pages\HealthCard.xaml.cs">
       <DependentUpon>HealthCard.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Parents.xaml.cs">
+      <DependentUpon>Parents.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Skips.xaml.cs">
       <DependentUpon>Skips.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Students.xaml.cs">
+      <DependentUpon>Students.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Subjects.xaml.cs">
       <DependentUpon>Subjects.xaml</DependentUpon>

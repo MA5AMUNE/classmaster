@@ -38,9 +38,9 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Label Grid.Column="5" Grid.Row="6" Content="Login" Width="150" Height="25" Background="#FFCA9390" Cursor="Arrow" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
-        <Label Grid.Column="5" Grid.Row="7" Content="Password" Width="150" Height="25" Background="#FF98CA90" Cursor="Arrow" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <Label Grid.Column="5" Grid.Row="7" Content="Password" Width="150" Height="25" Background="#FFCACA90" Cursor="Arrow" HorizontalAlignment="Right" VerticalAlignment="Top"/>
         <TextBox Grid.Column="6" Grid.Row="6" TextWrapping="Wrap" Text="Введите Логин" Width="150" Height="25" Background="#FFFD9494"  HorizontalAlignment="Center" VerticalAlignment="Top" Cursor="Pen" GotFocus="TextBox_GotFocus" Margin="0,5,0,0"/>
-        <TextBox Grid.Column="6" Grid.Row="7" TextWrapping="Wrap" Text="Введите Пароль" Width="150" Height="25" Background="#FFBEFD94"  HorizontalAlignment="Center" VerticalAlignment="Top" Cursor="Pen" GotFocus="TextBox_GotFocus_1"/>
+        <TextBox Grid.Column="6" Grid.Row="7" TextWrapping="Wrap" Text="Введите Пароль" Width="150" Height="25" Background="#FFF7FD94"  HorizontalAlignment="Center" VerticalAlignment="Top" Cursor="Pen" GotFocus="TextBox_GotFocus_1"/>
         <Button Content="Регистрация" Margin="0,0,0,0" Grid.Row="8" Grid.Column="5"/>
         <Button Content="Авторизация" Click="AuthClick" Grid.Row="8" Grid.Column="6"/>
 

@@ -62,5 +62,9 @@ namespace classmaster.Pages
             NavigationService.Navigate(new Subjects());
         }
 
+        private void ParentsClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Parents());
+        }
     }
 }
