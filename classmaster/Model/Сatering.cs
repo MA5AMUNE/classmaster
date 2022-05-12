@@ -8,12 +8,13 @@ namespace classmaster.Model
 
     public partial class Сatering
     {
-        [Key]
-        [Column(TypeName = "numeric")]
-        public decimal StudentCode { get; set; }
+        public int Id { get; set; }
 
         [Column("Сatering")]
         public bool? Сatering1 { get; set; }
+
+        [Column(TypeName = "money")]
+        public decimal? Price { get; set; }
 
         public virtual Students Students { get; set; }
     }

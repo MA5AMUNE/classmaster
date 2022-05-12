@@ -1,4 +1,4 @@
-﻿using classmaster.Pages;
+﻿using classmaster.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,26 +14,23 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace classmaster
+namespace classmaster.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для EventTable.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EventTable : Page
     {
-        public MainWindow()
+        DB DB { get; set; } = new DB();
+        public EventTable()
         {
             InitializeComponent();
-            MainFrame.Navigate(new Auth());
+            DataGridEvents.ItemsSource = DB.ClassEvents.ToList();   
         }
-        private void Back(object sender, RoutedEventArgs e)
-        {
-            MainFrame.GoBack();
-        }
-        private void Forward(object sender, RoutedEventArgs e)
-        {
-            MainFrame.GoForward();
 
+        private void DataGridEvents_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Events(DataGridEvents.CurrentItem as ClassEvents));
         }
     }
 }

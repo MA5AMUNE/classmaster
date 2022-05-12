@@ -9,10 +9,9 @@ namespace classmaster.Model
     [Table("HealthCard")]
     public partial class HealthCard
     {
-        [Key]
-        [Column(TypeName = "numeric")]
-        public decimal StudentCode { get; set; }
+        public int Id { get; set; }
 
+        [Required]
         [StringLength(50)]
         public string HealthGroup { get; set; }
 

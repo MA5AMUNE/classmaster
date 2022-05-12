@@ -8,13 +8,19 @@ namespace classmaster.Model
 
     public partial class Subjects
     {
-        [Key]
-        [Column(TypeName = "numeric")]
-        public decimal SubjectCode { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Subjects()
+        {
+            Teachers = new HashSet<Teachers>();
+        }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int Id { get; set; }
 
         [StringLength(50)]
         public string SubjectName { get; set; }
 
-        public virtual Teachers Teachers { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Teachers> Teachers { get; set; }
     }
 }

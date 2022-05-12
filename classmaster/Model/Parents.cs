@@ -8,13 +8,12 @@ namespace classmaster.Model
 
     public partial class Parents
     {
-        [Column(TypeName = "numeric")]
-        public decimal? ParentCode { get; set; }
+        public int Id { get; set; }
 
-        [Key]
         [Column(TypeName = "numeric")]
-        public decimal StudentCode { get; set; }
+        public decimal ParentsId { get; set; }
 
+        [StringLength(150)]
         public string MothersFullName { get; set; }
 
         [StringLength(50)]
@@ -23,9 +22,10 @@ namespace classmaster.Model
         [StringLength(50)]
         public string MothersEducation { get; set; }
 
-        [Column(TypeName = "numeric")]
-        public decimal? MothersPhone { get; set; }
+        [StringLength(15)]
+        public string MothersPhone { get; set; }
 
+        [StringLength(150)]
         public string FathersFullName { get; set; }
 
         [StringLength(50)]
@@ -37,6 +37,7 @@ namespace classmaster.Model
         [Column(TypeName = "numeric")]
         public decimal? FathersPhone { get; set; }
 
+        [StringLength(150)]
         public string AdopterFullName { get; set; }
 
         [StringLength(50)]

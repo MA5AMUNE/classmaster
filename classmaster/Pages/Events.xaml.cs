@@ -1,4 +1,5 @@
-﻿using System;
+﻿using classmaster.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,14 +21,44 @@ namespace classmaster.Pages
     /// </summary>
     public partial class Events : Page
     {
+        DB DB { get; set; } = new DB();
+        public ClassEvents ClassEvent { get; set; } = new ClassEvents();
+        public Events(ClassEvents classEvent)
+        {
+            ClassEvent = DB.ClassEvents.FirstOrDefault(c => c.Id == classEvent.Id); 
+            InitializeComponent();
+        }
         public Events()
         {
+            DB.ClassEvents.Add(ClassEvent);
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+
+        private void CheckAllSob(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new EventTable());
+        }
+
+        private void SaveChanges(object sender, RoutedEventArgs e)
         {
 
+            DB.SaveChanges();
+
+        }
+
+        private void CreateNew(object sender, RoutedEventArgs e)
+        {
+
+            NavigationService.Navigate(new Events());
+
+        }
+
+        private void Delete(object sender, RoutedEventArgs e)
+        {
+            DB.ClassEvents.Remove(ClassEvent);
+            SaveChanges(null, null);
+            NavigationService.Navigate(new EventTable());  
         }
     }
 }

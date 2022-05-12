@@ -20,9 +20,11 @@ namespace classmaster.Pages
     /// </summary>
     public partial class Parents : Page
     {
+        public Model.Parents ObjectParents { get; set; } = new Model.Parents();
         public Parents()
         {
             InitializeComponent();
+
         }
     }
 }

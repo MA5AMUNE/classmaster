@@ -92,6 +92,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\EventTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\MainMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -122,12 +126,16 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\ClassEvents.cs" />
+    <Compile Include="Model\ClassroomLessons.cs" />
     <Compile Include="Model\DB.cs" />
     <Compile Include="Model\HealthCard.cs" />
     <Compile Include="Model\Parents.cs" />
     <Compile Include="Model\Skips.cs" />
+    <Compile Include="Model\Sobytiya.cs" />
     <Compile Include="Model\Students.cs" />
     <Compile Include="Model\Subjects.cs" />
+    <Compile Include="Model\sysdiagrams.cs" />
     <Compile Include="Model\Teachers.cs" />
     <Compile Include="Model\Сatering.cs" />
     <Compile Include="Pages\Auth.xaml.cs">
@@ -141,6 +149,9 @@
     </Compile>
     <Compile Include="Pages\Events.xaml.cs">
       <DependentUpon>Events.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EventTable.xaml.cs">
+      <DependentUpon>EventTable.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
@@ -189,5 +200,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

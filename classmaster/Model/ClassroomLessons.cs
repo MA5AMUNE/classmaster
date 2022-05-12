@@ -6,13 +6,14 @@ namespace classmaster.Model
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Skips
+    public partial class ClassroomLessons
     {
-        public int StudentId { get; set; }
+        public DateTime? LessonDate { get; set; }
 
-        public DateTime? Date { get; set; }
+        [StringLength(50)]
+        public string ThemeClassroomLesson { get; set; }
 
-        public bool? ResonableExcuse { get; set; }
+        public string Note { get; set; }
 
         public int Id { get; set; }
     }

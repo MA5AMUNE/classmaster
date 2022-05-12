@@ -8,13 +8,13 @@ namespace classmaster.Model
 
     public partial class Students
     {
-        [Key]
-        [Column(TypeName = "numeric")]
-        public decimal StudentCode { get; set; }
+        public int Id { get; set; }
 
+        [Required]
         [StringLength(50)]
         public string FirstName { get; set; }
 
+        [Required]
         [StringLength(50)]
         public string SecondName { get; set; }
 
@@ -24,23 +24,26 @@ namespace classmaster.Model
         [Column(TypeName = "numeric")]
         public decimal? Phone { get; set; }
 
-        public DateTime? Birthdate { get; set; }
+        public DateTime Birthdate { get; set; }
 
+        [Required]
         [StringLength(50)]
         public string HomeAdress { get; set; }
 
-        [StringLength(10)]
-        public string Sex { get; set; }
+        public bool Sex { get; set; }
 
+        [Required]
         [StringLength(50)]
         public string Nationality { get; set; }
 
+        [Required]
         [StringLength(50)]
         public string OrderOfEnrollment { get; set; }
 
         [StringLength(50)]
         public string OrderOfExpulsion { get; set; }
 
+        [Required]
         [StringLength(50)]
         public string BirthCertificate { get; set; }
 
@@ -59,8 +62,6 @@ namespace classmaster.Model
         public virtual HealthCard HealthCard { get; set; }
 
         public virtual Parents Parents { get; set; }
-
-        public virtual Skips Skips { get; set; }
 
         public virtual Сatering Сatering { get; set; }
     }

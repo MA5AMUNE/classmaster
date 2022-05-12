@@ -8,34 +8,26 @@ namespace classmaster.Model
     public partial class DB : DbContext
     {
         public DB()
-            : base("name=DB")
+            : base("name=DB7")
         {
         }
 
+        public virtual DbSet<ClassEvents> ClassEvents { get; set; }
+        public virtual DbSet<ClassroomLessons> ClassroomLessons { get; set; }
         public virtual DbSet<HealthCard> HealthCard { get; set; }
         public virtual DbSet<Parents> Parents { get; set; }
         public virtual DbSet<Skips> Skips { get; set; }
+        public virtual DbSet<Sobytiya> Sobytiya { get; set; }
         public virtual DbSet<Students> Students { get; set; }
         public virtual DbSet<Subjects> Subjects { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Teachers> Teachers { get; set; }
         public virtual DbSet<Сatering> Сatering { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<HealthCard>()
-                .Property(e => e.StudentCode)
-                .HasPrecision(18, 0);
-
             modelBuilder.Entity<Parents>()
-                .Property(e => e.ParentCode)
-                .HasPrecision(18, 0);
-
-            modelBuilder.Entity<Parents>()
-                .Property(e => e.StudentCode)
-                .HasPrecision(18, 0);
-
-            modelBuilder.Entity<Parents>()
-                .Property(e => e.MothersPhone)
+                .Property(e => e.ParentsId)
                 .HasPrecision(18, 0);
 
             modelBuilder.Entity<Parents>()
@@ -50,25 +42,9 @@ namespace classmaster.Model
                 .Property(e => e.NumberOfChildren)
                 .IsFixedLength();
 
-            modelBuilder.Entity<Skips>()
-                .Property(e => e.StudentCode)
-                .HasPrecision(18, 0);
-
-            modelBuilder.Entity<Skips>()
-                .Property(e => e.Total)
-                .HasPrecision(18, 0);
-
-            modelBuilder.Entity<Students>()
-                .Property(e => e.StudentCode)
-                .HasPrecision(18, 0);
-
             modelBuilder.Entity<Students>()
                 .Property(e => e.Phone)
                 .HasPrecision(18, 0);
-
-            modelBuilder.Entity<Students>()
-                .Property(e => e.Sex)
-                .IsFixedLength();
 
             modelBuilder.Entity<Students>()
                 .HasOptional(e => e.HealthCard)
@@ -79,32 +55,18 @@ namespace classmaster.Model
                 .WithRequired(e => e.Students);
 
             modelBuilder.Entity<Students>()
-                .HasOptional(e => e.Skips)
-                .WithRequired(e => e.Students);
-
-            modelBuilder.Entity<Students>()
                 .HasOptional(e => e.Сatering)
                 .WithRequired(e => e.Students);
 
             modelBuilder.Entity<Subjects>()
-                .Property(e => e.SubjectCode)
-                .HasPrecision(18, 0);
-
-            modelBuilder.Entity<Subjects>()
-                .HasOptional(e => e.Teachers)
-                .WithRequired(e => e.Subjects);
-
-            modelBuilder.Entity<Teachers>()
-                .Property(e => e.TeacherCode)
-                .HasPrecision(18, 0);
-
-            modelBuilder.Entity<Teachers>()
-                .Property(e => e.SubjectCode)
-                .HasPrecision(18, 0);
+                .HasMany(e => e.Teachers)
+                .WithRequired(e => e.Subjects)
+                .HasForeignKey(e => e.SubjectId)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Сatering>()
-                .Property(e => e.StudentCode)
-                .HasPrecision(18, 0);
+                .Property(e => e.Price)
+                .HasPrecision(19, 4);
         }
     }
 }

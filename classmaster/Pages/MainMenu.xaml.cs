@@ -44,7 +44,7 @@ namespace classmaster.Pages
 
         private void EventsButtonClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Events());
+            NavigationService.Navigate(new EventTable());
         }
 
         private void SkipsClick(object sender, RoutedEventArgs e)

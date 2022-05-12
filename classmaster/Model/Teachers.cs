@@ -8,13 +8,12 @@ namespace classmaster.Model
 
     public partial class Teachers
     {
-        [Column(TypeName = "numeric")]
-        public decimal? TeacherCode { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int Id { get; set; }
 
-        [Key]
-        [Column(TypeName = "numeric")]
-        public decimal SubjectCode { get; set; }
+        public int SubjectId { get; set; }
 
+        [StringLength(150)]
         public string TeacherFullName { get; set; }
 
         public virtual Subjects Subjects { get; set; }
