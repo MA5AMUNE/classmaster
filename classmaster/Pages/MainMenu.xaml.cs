@@ -39,7 +39,7 @@ namespace classmaster.Pages
 
         private void ClassroomLessonsClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new ClassroomLessons());
+            //NavigationService.Navigate(new ClassroomLessons());
         }
 
         private void EventsButtonClick(object sender, RoutedEventArgs e)

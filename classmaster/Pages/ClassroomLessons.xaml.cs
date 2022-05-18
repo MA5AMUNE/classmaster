@@ -20,8 +20,10 @@ namespace classmaster.Pages
     /// </summary>
     public partial class ClassroomLessons : Page
     {
-        public ClassroomLessons()
+        public Model.ClassroomLessons ClassroomLesson { get; set; }
+        public ClassroomLessons(Model.ClassroomLessons classroomLesson)
         {
+            ClassroomLesson = classroomLesson;
             InitializeComponent();
         }
     }

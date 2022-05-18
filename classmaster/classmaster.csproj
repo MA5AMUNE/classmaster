@@ -88,6 +88,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ClassRoomLessonsList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Events.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -146,6 +150,9 @@
     </Compile>
     <Compile Include="Pages\ClassroomLessons.xaml.cs">
       <DependentUpon>ClassroomLessons.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ClassRoomLessonsList.xaml.cs">
+      <DependentUpon>ClassRoomLessonsList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Events.xaml.cs">
       <DependentUpon>Events.xaml</DependentUpon>
