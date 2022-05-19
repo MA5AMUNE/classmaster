@@ -39,7 +39,7 @@ namespace classmaster.Pages
 
         private void ClassroomLessonsClick(object sender, RoutedEventArgs e)
         {
-            //NavigationService.Navigate(new ClassroomLessons());
+            NavigationService.Navigate(new ClassroomLessonsList());
         }
 
         private void EventsButtonClick(object sender, RoutedEventArgs e)
@@ -65,6 +65,21 @@ namespace classmaster.Pages
         private void ParentsClick(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Parents());
+        }
+
+        private void CateringClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Catering());
+        }
+
+        private void StudentsClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Students());
+        }
+
+        private void ExitClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Auth());
         }
     }
 }

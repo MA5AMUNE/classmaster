@@ -31,5 +31,10 @@ namespace classmaster.Pages
         {
             NavigationService.Navigate(new ClassroomLessons(DataGridCRL.CurrentItem as Model.ClassroomLessons));
         }
+
+        private void DataGridCRL_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

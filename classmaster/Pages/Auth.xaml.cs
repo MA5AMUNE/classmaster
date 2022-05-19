@@ -47,5 +47,10 @@ namespace classmaster.Pages
         {
             NavigationService.Navigate(new MainMenu());
         }
+
+        private void Registration(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Вы успешно зарегистрировались");
+        }
     }
 }

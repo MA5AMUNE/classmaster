@@ -41,7 +41,7 @@
         <Label Grid.Column="5" Grid.Row="7" Content="Password" Width="150" Height="25" Background="#FFCACA90" Cursor="Arrow" HorizontalAlignment="Right" VerticalAlignment="Top"/>
         <TextBox Grid.Column="6" Grid.Row="6" TextWrapping="Wrap" Text="Введите Логин" Width="150" Height="25" Background="#FFFD9494"  HorizontalAlignment="Center" VerticalAlignment="Top" Cursor="Pen" GotFocus="TextBox_GotFocus" Margin="0,5,0,0"/>
         <TextBox Grid.Column="6" Grid.Row="7" TextWrapping="Wrap" Text="Введите Пароль" Width="150" Height="25" Background="#FFF7FD94"  HorizontalAlignment="Center" VerticalAlignment="Top" Cursor="Pen" GotFocus="TextBox_GotFocus_1"/>
-        <Button Content="Регистрация" Margin="0,0,0,0" Grid.Row="8" Grid.Column="5"/>
+        <Button Content="Регистрация" Margin="0,0,0,0" Grid.Row="8" Grid.Column="5" Click="Registration"/>
         <Button Content="Авторизация" Click="AuthClick" Grid.Row="8" Grid.Column="6"/>
 
     </Grid>

@@ -1,4 +1,5 @@
 ﻿using System;
+using classmaster.Model;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,11 +21,25 @@ namespace classmaster.Pages
     /// </summary>
     public partial class ClassroomLessons : Page
     {
+        DB DB { get; set; } = new DB();
         public Model.ClassroomLessons ClassroomLesson { get; set; }
         public ClassroomLessons(Model.ClassroomLessons classroomLesson)
         {
             ClassroomLesson = classroomLesson;
             InitializeComponent();
+        }
+
+        private void CheckAllCRL(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ClassroomLessonsList());
+        }
+
+        private void CreateNew(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void Delete(object sender, RoutedEventArgs e)
+        {
         }
     }
 }

@@ -32,7 +32,7 @@
             <ColumnDefinition Width="150px"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label Grid.Column="0" Content="&lt;User&gt;" Width="200" Height="25" Background="White" Cursor="Arrow" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.RowSpan="1" FontFamily="Segoe Script" Grid.Row="2"/>
+        <Label Grid.Column="0" Content="&lt;User&gt;" Width="200" Height="25" Background="White" Cursor="Arrow" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.RowSpan="1" FontFamily="Segoe Script" Grid.Row="2" Visibility="Hidden"/>
         <Label Grid.Column="0" Content="Здравствуйте!" Width="200" Height="25" Background="White" Cursor="Arrow" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Sitka Banner" FontWeight="Bold" Grid.Row="1"/>
         <Label Content="Код предмета" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Width="150" Height="30" Background="#FFE2E2E2"/>
         <Label Content="Наименование предмета" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Width="150" Height="30" Background="#FFE2E2E2"/>
@@ -41,6 +41,6 @@
         <Button Content="Сохранить предмет" Grid.Row="5" Grid.Column="3"/>
         <Button Content="Добавить предмет" Grid.Row="4" Grid.Column="3"/>
         <Button Content="Удалить предмет" Grid.Row="6" Grid.Column="3"/>
-
+        <Button Content="В главное меню" Grid.Row="8" Grid.Column="3" Click="ToMain"/>
     </Grid>
 </Page>

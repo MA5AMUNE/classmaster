@@ -34,5 +34,10 @@ namespace classmaster.Pages
         {
 
         }
+
+        private void ToMain(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new MainMenu());
+        }
     }
 }
